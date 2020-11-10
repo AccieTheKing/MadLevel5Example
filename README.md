@@ -1,14 +1,17 @@
-# Level 4 Questions
+# Level 5 Questions
 
-## A singleton pattern is used in the class that defines the database. What is the purpose of this pattern?
-- Singleton pattern is a design pattern which restricts a class to instantiate its multiple objects. It is nothing but a way of defining a class. Class is defined in such a way that only one instance of the class is created in the complete execution of a program or project. It is used where only a single instance of a class is required to control the action throughout the execution. A singleton class shouldn’t have multiple instances in any case and at any cost. Singleton classes are used for logging, driver objects, caching and thread pool, database connections.    
+## What are the parts that Android Architecture Components consist of?
 
-## Why should you load the data in a background thread?
-- You should load the data in a background thread because the UI has a good change to be frozen if not. With a background thread this gives the application a better performance.
-    
-## What are the three major components of ROOM and what are their responsibilities?
-- The room database
-- Entities
-- Data access objects
-    
-## How can you extract the current database so that you can see the table, columns, and data?
+- The Android Architecture Components consist of ViewModel and LiveData
+
+## Which design principle is followed by the Android Architecture Components?
+
+- The MVVM(Model, ViewModel and View) design principle
+
+## What is the purpose of LiveData?
+
+- The purpose of LiveData is to observe for changes in data and decouple consumer from producer.
+
+## What is the purpose of a ViewModel?
+
+- The purpose of a ViewModel is for preparing the data for the UI/View. It holds data that is immediately available to the next activity or fragment instance even when configurations change.
